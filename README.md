@@ -16,3 +16,4 @@
 1.The search list at the header is stil on working at the main page when the user click a coin on the coin-table.
 The search bar should be cleared.
 2.The search list at the header is stil on working at the detailed page when the user clicks on the React image at the top-left that        directs the app to the main page.
+ I am trying to figure out the problems.

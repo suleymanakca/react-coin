@@ -1,4 +1,9 @@
 # React-Coin
+
+	Before you run:
+
+### `install install`
+
   Using React, I built an CoinApp
 
   This app gives informations about 100 coins.

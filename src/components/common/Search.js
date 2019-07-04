@@ -1,10 +1,11 @@
 import React from 'react';
 import Loading from './Loading';
+import Header from './Header';
 import { withRouter } from 'react-router-dom';
 import { API_URL} from '../../config';
 import {handleResponse} from '../../helpers';
+import './Header.css'
 import './Search.css';
-
 class Search extends React.Component{
 
     constructor(){
@@ -17,6 +18,7 @@ class Search extends React.Component{
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleRedirect = this.handleRedirect.bind(this);
+        this.handleClick=this.handleClick.bind(this);
     }
 
 
@@ -44,7 +46,12 @@ class Search extends React.Component{
 
         });
     }
-
+    handleClick(){
+        this.setState({
+            searchQuery:'',
+            searchResults:[]
+        })
+    }
     handleRedirect(currencyId){
         // Clear input value and close autocomplete container
         // By clearing searchQuery state
@@ -91,7 +98,10 @@ class Search extends React.Component{
     render() {
         const { loading, searchQuery } = this.state;
         return(
+            <div className="Header">
+            <Header handleClick={this.handleClick}/>
             <div className="Search">
+           
                 <span className="Search-icon" />
                 <input 
                     className="Search-input"
@@ -112,6 +122,8 @@ class Search extends React.Component{
                     />
                 </div>}
                 {this.renderSearchResults()}
+             
+            </div>
             </div>
         );
     }

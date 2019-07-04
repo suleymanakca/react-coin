@@ -1,18 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Search from './Search';
 import logo from './logo.png';
-import './Header.css'
 
-const Header = () =>{
+const Header = (props) =>{
 
     
     return (
         <div className="Header">
             <Link to="/">
-                <img src={logo} alt="logo" className="Header-logo" />
+                <img src={logo} alt="logo" className="Header-logo" 
+                     onClick={props.handleClick}
+                />
             </Link>
-            <Search/>
         </div>
     );
 

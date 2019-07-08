@@ -4,6 +4,10 @@
 
 ### `install install`
 
+	And you can run:
+	
+### `npm start`
+
   Using React, I built an CoinApp
 
   This app gives informations about 100 coins.

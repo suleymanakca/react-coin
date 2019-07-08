@@ -2,7 +2,7 @@
 
 	Before you run:
 
-### `install install`
+### `npm install`
 
 	And you can run:
 	

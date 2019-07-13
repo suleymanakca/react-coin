@@ -10,6 +10,7 @@
     "eslint": "^4.18.2",
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.14",
+    "lodash.template": "^4.5.0",
     "mem": "^5.1.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",

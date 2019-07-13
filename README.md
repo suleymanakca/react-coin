@@ -2,7 +2,11 @@
 
 	Before you run:
 
-### `install install`
+### `npm install`
+
+	And you can run:
+	
+### `npm start`
 
   Using React, I built an CoinApp
 
